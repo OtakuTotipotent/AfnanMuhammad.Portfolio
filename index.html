@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afnan Muhammad | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+        aria-controls="navbar"> &#9776;
+    </button>
+
+    <nav id="navbar">
+        <ul>
+            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">&#10006;</button>
+            </li>
+            <li class="logo-li"><a href="/">Afnan Muhammad</a></li>
+            <li><a class="active-link" aria-current="page" href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+    <header>
+        <!-- HERO SECTION | INTRO & CTA -->
+    </header>
+
+    <main>
+        <section id="projects">
+            <!-- FEATURED PROJECTS | CASE STUDIES -->
+        </section>
+        <section id="about">
+            <!-- ABOUT ME | BACKGROUND, CONTEXT, EXPERIENCES -->
+        </section>
+        <section id="services">
+            <!-- SERVICES | AREAS OF EXPERTISE -->
+        </section>
+        <section id="testimonials">
+            <!-- TESTIMONIALS | SOCIAL PROOF, CREDIBILITY, RECOMMENDATIONS -->
+        </section>
+        <section id="socials">
+            <!-- SOCIAL HANDLES | X, LINKEDin, GITHUB, FACEBOOK, IG, FIVERR, UPWORK, FREELANCER, UDEMY -->
+        </section>
+        <section id="downloadable">
+            <!-- DOWNLOADABLE MATERIALS | RESUME, CV, GUIDES -->
+        </section>
+        <section id="pricing">
+            <!-- PRICING | FREELANCING, PRICES, OFFERS -->
+        </section>
+        <section id="contact">
+            <!-- CONTACT FORM | IMMEDIATE RESPONSE, EMAIL SERVICES -->
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="scripts.js" defer></script>
+
+</body>
+
+</html>
