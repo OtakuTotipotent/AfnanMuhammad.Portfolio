@@ -39,12 +39,14 @@ main {
 }
 
 h1 {
-    font-size: clamp(1.8rem, calc(7vw + 1rem), 5rem);
+    font-size: clamp(1.5rem, calc(2vw + 0.8rem), 3rem);
+    font-family: inherit;
 }
 
 h2,
 h3 {
-    font-size: clamp(1.4rem, calc(4vw + 1rem), 2.5rem);
+    font-size: clamp(1rem, calc(1vw + 0.6rem), 2.5rem);
+    font-family: inherit;
 }
 
 p,
@@ -53,6 +55,7 @@ li {
     list-style: none;
     text-decoration: none;
     font-size: clamp(0.8rem, 1rem, 1.2rem);
+    font-family: inherit;
 }
 
 img {
@@ -67,9 +70,19 @@ img {
 
 .card {}
 
-.btn-primary {}
+.btn-primary,
+.btn-secondary {
+    padding: .5em;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    border-radius: 50px;
+    transition: all 200ms ease;
+}
 
-.btn-secondary {}
+.btn-primary:hover,
+.btn-secondary:hover {
+    opacity: 0.6;
+}
 
 .not-selectable {}
 
@@ -143,15 +156,36 @@ nav a.active-link {
     display: none;
 }
 
+/* HEADER | HERO-SECTION */
+
+header {
+    width: var(--width-bigger-screens);
+    height: 80vh;
+    height: 80dvh;
+    margin: auto;
+    display: flex;
+    gap: 1em;
+}
+
+header .text-container,
+header .img-container {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: var(--padding-secondary);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 700px) {
-
-    #open-sidebar-button,
-    #close-sidebar-button {
-        display: block;
-    }
-
     nav {
         position: fixed;
         right: -100%;
@@ -167,7 +201,7 @@ nav a.active-link {
         right: 0;
     }
 
-    nav.show ~ #overlay {
+    nav.show~#overlay {
         display: block;
     }
 
@@ -188,5 +222,22 @@ nav a.active-link {
 
     nav .logo-li {
         margin-right: unset;
+    }
+
+    #open-sidebar-button,
+    #close-sidebar-button {
+        display: block;
+    }
+
+    /* HEADER | HERO-SECTION */
+
+    header {
+        width: var(--width-smaller-screens);
+        flex-direction: column;
+    }
+
+    header .text-container,
+    header .img-container {
+        padding: 0 .5em;
     }
 }
