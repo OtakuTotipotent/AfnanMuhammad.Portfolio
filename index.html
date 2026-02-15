@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afnan Muhammad | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobiles.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <li class="close-button-li"><button id="close-sidebar-button" onclick="closeSidebar()"
                     aria-label="close sidebar">&#10006;</button>
             </li>
-            <li class="logo-li"><a href="/">Afnan Muhammad</a></li>
+            <li class="logo-li">Afnan Muhammad</li>
             <li><a class="active-link" aria-current="page" href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
@@ -37,13 +38,12 @@
                 Building scalable full-stack solutions that solve real-world problems
             </h1>
             <h2>
-                Crafting high performance web applications with modern TypeScript & Python frameworks, & Java Springboot
+                Crafting high performance web applications with modern TypeScript & Python frameworks, plus Java
+                Springboot
             </h2>
             <div class="buttons">
-                <a href="#services" class="btn-primary">View Tech Stack</a>
-                <a href="https://github.com/OtakuTotipotent" target="_blank" class="btn-secondary">
-                    View GitHub Profile
-                </a>
+                <a href="#services" class="btn-primary">View Services</a>
+                <a href="#socials" class="btn-secondary">Get in touch</a>
             </div>
         </div>
         <div class="img-container">
@@ -54,35 +54,189 @@
     <main>
         <section id="projects">
             <!-- FEATURED PROJECTS | CASE STUDIES -->
+            <div class="text-container">
+                <h4 class="tag">Featured Projects</h4>
+                <h3>
+                    A selection of end-to-end applications built with security, scalability, and user experience in
+                    mind.
+                </h3>
+                <a href="https://github.com/OtakuTotipotent?tab=repositories" class="btn-primary">View all projects</a>
+            </div>
+            <div class="cards-container">
+                <div class="carousel">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="" alt="card image">
+                        </div>
+                        <div class="card-header">
+                            <h5 class="tag">Title</h5>
+                            <p>Description</p>
+                        </div>
+                        <div class="card-intro">
+                            <h5 class="role">Role & Contribution</h5>
+                            <h5>Problem & Solution</h5>
+                        </div>
+                        <div class="card-tech">
+                            <h6 class="tag">Frontend</h6>
+                            <h6 class="tag">Backend</h6>
+                            <h6 class="tag">Postgresql</h6>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" class="btn-primary">Visit Project</a>
+                            <a href="#" class="btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="" alt="card image">
+                        </div>
+                        <div class="card-header">
+                            <h5 class="tag">Title</h5>
+                            <p>Description</p>
+                        </div>
+                        <div class="card-intro">
+                            <h5 class="role">Role & Contribution</h5>
+                            <h5>Problem & Solution</h5>
+                        </div>
+                        <div class="card-tech">
+                            <h6 class="tag">Frontend</h6>
+                            <h6 class="tag">Backend</h6>
+                            <h6 class="tag">Postgresql</h6>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" class="btn-primary">Visit Project</a>
+                            <a href="#" class="btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="" alt="card image">
+                        </div>
+                        <div class="card-header">
+                            <h5 class="tag">Title</h5>
+                            <p>Description</p>
+                        </div>
+                        <div class="card-intro">
+                            <h5 class="role">Role & Contribution</h5>
+                            <h5>Problem & Solution</h5>
+                        </div>
+                        <div class="card-tech">
+                            <h6 class="tag">Frontend</h6>
+                            <h6 class="tag">Backend</h6>
+                            <h6 class="tag">Postgresql</h6>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" class="btn-primary">Visit Project</a>
+                            <a href="#" class="btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <button class="btn-carousel prev" disabled>
+                        &#8592;
+                    </button>
+                    <button class="btn-carousel next">
+                        &#8594;
+                    </button>
+                </div>
+            </div>
         </section>
         <section id="about">
             <!-- ABOUT ME | BACKGROUND, CONTEXT, EXPERIENCES -->
-            <div class="academic-container"></div>
+            <div class="academic-container">
+                <div class="text-container">
+                    <h4 class="tag">Engineer behind the code</h4>
+                    <h3>Highlight your BS-IT from BZU and your goal of becoming a Software Architect. Mention your
+                        multilingual skills (Urdu,
+                        Hindi, English) as a major asset for remote global teams.</h3>
+                </div>
+                <div class="cards-container">
+                    <!-- Certificates, Linguistics, Institutes -->
+                </div>
+            </div>
             <div class="gallery-container"></div>
         </section>
         <section id="services">
             <!-- SERVICES | AREAS OF EXPERTISE -->
+            <div class="text-container">
+                <h4 class="tag">Expertise & Solutions</h4>
+                <h3>From pixel-perfect front-ends to robust API architectures and cloud deployments.</h3>
+            </div>
+            <div class="cards-container"></div>
         </section>
         <section id="testimonials">
             <!-- TESTIMONIALS | SOCIAL PROOF, CREDIBILITY, RECOMMENDATIONS -->
+            <div class="text-container">
+                <h4 class="tag">Client Reviews</h4>
+                <h3>A glance at recommendations from some of my professional clients.</h3>
+            </div>
+            <div class="cards-container"></div>
         </section>
         <section id="socials">
             <!-- SOCIAL HANDLES | X, LINKEDin, GITHUB, FACEBOOK, IG, FIVERR, UPWORK, FREELANCER, UDEMY -->
-        </section>
-        <section id="downloadable">
-            <!-- DOWNLOADABLE MATERIALS | RESUME, CV, GUIDES -->
-        </section>
-        <section id="pricing">
-            <!-- PRICING | FREELANCING, PRICES, OFFERS -->
+            <div class="text-container">
+                <h4 class="tag">Let's Connect</h4>
+                <h3>Find me on professional platforms on reach out directly for collaborations.</h3>
+            </div>
+            <div class="cards-container"></div>
         </section>
         <section id="contact">
             <!-- CONTACT FORM | IMMEDIATE RESPONSE, EMAIL SERVICES -->
+            <div class="text-container">
+                <h4 class="tag">Start Conversation</h4>
+                <h3>Feel free to get in touch with me via Email service across the Globe.</h3>
+            </div>
+            <div class="form-container"></div>
+        </section>
+        <section id="downloadable">
+            <!-- DOWNLOADABLE MATERIALS | RESUME, CV, GUIDES -->
+            <div class="text-container">
+                <h4 class="tag">Resources & Resume</h4>
+                <h3>Downloadable documents related to my professional work.</h3>
+            </div>
+            <div class="cards-container"></div>
+        </section>
+        <section id="pricing">
+            <!-- PRICING | FREELANCING, PRICES, OFFERS -->
+            <div class="text-container">
+                <h4 class="tag">Pricing & Offers</h4>
+                <h3>Flexible Collaboration Models</h3>
+                <h4>Briefly explain your "Fixed-Price" (for defined projects) or "Hourly" (for ongoing support) models.
+                </h4>
+            </div>
+            <div class="cards-container"></div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p class="copyright">© 2024 Afnan Muhammad. Built with Love.</p>
+        <p class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#socials">Socials</a>
+            <a href="#contact">Contact</a>
+        </p>
+        <p class="status">
+            <span class="badge">Available to Hire</span>
+            <span class="badge">Available for new Projects</span>
+            <span class="badge">Open to Collaborations</span>
+            <span class="badge">Prefers Remote Work</span>
+            <span class="badge">Freelancing</span>
+            <span class="badge">Tech Enthusiast</span>
+            <span class="badge">AI/DS Enthusiast</span>
+        </p>
+        <p class="legal">All rights reserved for
+            <a href="#">Privacy Policy</a>
+            and
+            <a href="#">Terms & Conditions.</a>
+        </p>
+        <p class="github-link">
+            <a href="#">Source</a>
+        </p>
+    </footer>
 
-    <script src="scripts.js" defer></script>
+    <script src="/scripts/main.js" defer></script>
 
 </body>
 
