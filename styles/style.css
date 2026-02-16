@@ -97,7 +97,7 @@ section>div {
 
 /* UTILITIES */
 
-h4.tag {
+.section-heading {
     width: fit-content;
     font-weight: 500;
     line-height: 1;
@@ -107,7 +107,7 @@ h4.tag {
     border-radius: 50px;
 }
 
-h5.tag {
+.title {
     width: fit-content;
     line-height: 1;
     font-size: 1em;
@@ -119,11 +119,19 @@ h5.tag {
     border-radius: 50px;
 }
 
-h5.role {
+.role {
+    font-weight: 500;
     color: var(--color-primary);
 }
 
-h6.tag {
+.prob,
+.description {
+    font-size: 0.9em;
+    color: var(--color-tertiary);
+    opacity: .7;
+}
+
+.tag {
     width: fit-content;
     color: var(--color-secondary);
     background-color: var(--color-tertiary);
@@ -131,6 +139,7 @@ h6.tag {
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.7em;
+    opacity: .8;
 }
 
 .buttons-container {
@@ -339,7 +348,7 @@ header img {
 
 .card-img {
     width: 100%;
-    height: 200px;
+    height: 170px;
 }
 
 .card-img img {
@@ -353,19 +362,6 @@ header img {
     display: flex;
     flex-direction: column;
     gap: .4em;
-}
-
-.card-header p {
-    color: var(--color-tertiary);
-    font-size: .86em;
-}
-
-.card-intro h5.role {
-    font-size: 0.9em;
-}
-
-.card-intro h5 {
-    font-size: .8em;
 }
 
 .card-tech,
