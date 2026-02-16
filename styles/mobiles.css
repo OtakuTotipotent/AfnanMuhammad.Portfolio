@@ -100,11 +100,11 @@
         gap: .1em;
     }
 
-    #about .slice {
+    #about .image {
         max-width: 25px;
     }
 
-    #about .slice.active{
+    #about .image.active{
         flex: 0 0 240px;
         max-width: 240px;
     }

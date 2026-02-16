@@ -1,4 +1,4 @@
-const slices = document.querySelectorAll('.slice');
+const slices = document.querySelectorAll('#about .image');
 
 slices.forEach((slice) => {
     slice.addEventListener("click", () => {
