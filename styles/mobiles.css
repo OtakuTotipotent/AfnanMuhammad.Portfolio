@@ -101,11 +101,14 @@
     }
 
     #about .image {
-        max-width: 25px;
+        width: 25px;
     }
 
-    #about .image.active{
-        flex: 0 0 240px;
-        max-width: 240px;
+    #about .image.active {
+        width: 240px;
+    }
+
+    .academic-container details {
+        width: 100%;
     }
 }
