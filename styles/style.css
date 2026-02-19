@@ -553,10 +553,16 @@ details[open] .answer {
 
 /* SERVICES SECTION */
 
+#services {
+    min-height: 40vh;
+    min-height: 40dvh;
+    margin-top: 4em;
+}
+
 #services .text-container {
     order: 1;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /* text-align: center; */
 }
 
 #services .card-header {
@@ -579,4 +585,74 @@ details[open] .answer {
     background-color: var(--color-secondary);
     opacity: 0.85;
     font-size: 1em;
+}
+
+/* TESTIMONIALS SECTION */
+
+#testimonials .card {
+    justify-content: center;
+    padding: 2em;
+    border: 1px solid var(--color-primary);
+    background-color: var(--glass-secondary);
+}
+
+.card-quote {
+    padding: 1em;
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--color-tertiary);
+    line-height: 1.6;
+    opacity: 0.8;
+    position: relative;
+}
+
+.card-quote::before {
+    content: '“';
+    font-size: 4em;
+    position: absolute;
+    top: -0.5em;
+    left: -0.3em;
+    color: var(--color-secondary);
+    font-family: serif;
+    pointer-events: none;
+}
+
+.card-profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: auto;
+}
+
+.card-profile .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-primary);
+    flex-shrink: 0;
+}
+
+.card-profile .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-profile .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.card-profile .name {
+    font-weight: 600;
+    color: var(--color-tertiary);
+    font-size: 1.1em;
+}
+
+.card-profile .role {
+    font-size: 0.85em;
+    color: var(--color-secondary);
+    opacity: 0.8;
 }

@@ -122,6 +122,10 @@
 
     /* SERVICES SECTION */
 
+    #services {
+        margin-top: 0;
+    }
+
     #services .text-container {
         order: 0;
     }
