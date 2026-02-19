@@ -18,6 +18,14 @@
         align-self: flex-start;
     }
 
+    .section-heading {
+        margin-bottom: 1em;
+    }
+
+    #about .section-heading {
+        margin-bottom: 3em;
+    }
+
     .text-container {
         gap: 2em;
     }
@@ -110,5 +118,11 @@
 
     .academic-container details {
         width: 100%;
+    }
+
+    /* SERVICES SECTION */
+
+    #services .text-container {
+        order: 0;
     }
 }

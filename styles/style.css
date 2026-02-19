@@ -179,6 +179,7 @@ section>div {
 .btn-secondary {
     color: var(--color-tertiary);
     border: 1px solid var(--color-tertiary);
+    opacity: .8;
 }
 
 .btn-primary:hover,
@@ -431,6 +432,7 @@ details summary {
     color: var(--color-secondary);
     position: relative;
     transition: color 0.3s ease;
+    user-select: none;
 }
 
 details summary::marker {
@@ -547,4 +549,34 @@ details[open] .answer {
 .gallery-container:has(.image:hover)::before {
     opacity: 0.4;
     top: -3.5em;
+}
+
+/* SERVICES SECTION */
+
+#services .text-container {
+    order: 1;
+    align-items: center;
+    text-align: center;
+}
+
+#services .card-header {
+    gap: 1em;
+    padding: 1.5em 1.5em 0 1.5em;
+}
+
+#services .title {
+    text-align: center;
+}
+
+#services .card-intro {
+    padding: 0.5em 1.5em;
+}
+
+#services .prob {
+    padding: .5em;
+    border-radius: 8px;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    opacity: 0.85;
+    font-size: 1em;
 }
