@@ -42,14 +42,14 @@ const socialsData = [
     {
         platform: "WhatsApp",
         handle: "+92 3XX XXXXXXX",
-        link: "#",
+        link: "https://wa.me/923245368371",
         color: "var(--glass-secondary)",
         spanClass: "span-col-2",
         colorVariation: "--color-secondary"
     },
     {
         platform: "Guru",
-        handle: "Afnan M.",
+        handle: "Not available yet!",
         link: "#",
         color: "#2A3A45",
         spanClass: "",
@@ -57,19 +57,67 @@ const socialsData = [
     },
     {
         platform: "LinkedIn",
-        handle: "in/afnan_muhammad",
-        link: "#",
+        handle: "in/otakutotipotent",
+        link: "https://pk.linkedin.com/in/otakutotipotent",
         color: "#0A66C2",
         spanClass: "span-col-2",
         colorVariation: "--color-tertiary"
     },
     {
         platform: "Indeed",
-        handle: "Afnan Muhammad",
+        handle: "Not available yet!",
         link: "#",
         color: "#ff6600",
         spanClass: "span-col-2",
         colorVariation: "--color-secondary"
+    },
+    {
+        platform: "FlexJobs",
+        handle: "Not available yet!",
+        link: "#",
+        color: "#8e35b1",
+        spanClass: "",
+        colorVariation: "--color-tertiary"
+    },
+    {
+        platform: "Braintrust",
+        handle: "Not available yet!",
+        link: "#",
+        color: "#181717",
+        spanClass: "span-col-2",
+        colorVariation: "--color-tertiary"
+    },
+    {
+        platform: "Preply",
+        handle: "Not available yet!",
+        link: "#",
+        color: "#FF79AC",
+        spanClass: "",
+        colorVariation: "--color-secondary"
+    },
+    {
+        platform: "PeoplePerHour",
+        handle: "Not available yet!",
+        link: "#",
+        color: "#203148",
+        spanClass: "span-col-2",
+        colorVariation: "--color-tertiary"
+    },
+    {
+        platform: "HubStaff",
+        handle: "Not available yet!",
+        link: "#",
+        color: "#2A4DFF",
+        spanClass: "",
+        colorVariation: "--color-tertiary"
+    },
+    {
+        platform: "Gun.io",
+        handle: "Not available yet!",
+        link: "#",
+        color: "#00000055",
+        spanClass: "",
+        colorVariation: "--color-tertiary"
     },
 ];
 
