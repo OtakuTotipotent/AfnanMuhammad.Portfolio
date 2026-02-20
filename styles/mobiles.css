@@ -133,7 +133,7 @@
     /* SOCIALS SECTION */
 
     .socials-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .span-col-2 {
@@ -147,6 +147,14 @@
     .span-row-2 .bg-text,
     .span-col-2 .bg-text,
     .social-card .bg-text {
-        font-size: 3.5em;
+        font-size: 3em;
+    }
+
+    .social-content .platform-name {
+        font-size: 1.5em;
+    }
+
+    .social-content .platform-handle {
+        font-size: 0.85em;
     }
 }
