@@ -1,5 +1,3 @@
-// scripts/testimonials.js
-
 const testimonialsData = [
     {
         name: "Mr Zohaib Hassan & Engr. Adil Badshah",
@@ -27,29 +25,22 @@ const testimonialsData = [
     }
 ];
 
-function renderTestimonials() {
-    const carousel = document.querySelector("#testimonials .carousel");
-    if (!carousel) return;
+const TestimonialsCarousel = document.querySelector("#testimonials .carousel");
 
-    testimonialsData.forEach(client => {
-        const cardHTML = `
-            <div class="card">
-                <div class="card-quote">
-                    " ${client.review} "
+testimonialsData.forEach(client => {
+    const cardHTML = `
+        <div class="card">
+            <div class="card-quote"> "${client.review}" </div>
+            <div class="card-profile">
+                <div class="avatar">
+                    <img src="${client.avatar}" alt="${client.name}" loading="lazy">
                 </div>
-                <div class="card-profile">
-                    <div class="avatar">
-                        <img src="${client.avatar}" alt="${client.name}" loading="lazy">
-                    </div>
-                    <div class="info">
-                        <h5 class="name">${client.name}</h5>
-                        <p class="role">${client.role}</p>
-                    </div>
+                <div class="info">
+                    <p class="name">${client.name}</p>
+                    <p class="role">${client.role}</p>
                 </div>
             </div>
+        </div>
         `;
-        carousel.insertAdjacentHTML('beforeend', cardHTML);
-    });
-}
-
-renderTestimonials();
+    TestimonialsCarousel.insertAdjacentHTML('beforeend', cardHTML);
+});
