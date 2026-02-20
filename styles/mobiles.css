@@ -157,4 +157,23 @@
     .social-content .platform-handle {
         font-size: 0.85em;
     }
+
+    /* CONTACT SECTION */
+
+    #contact-form {
+        gap: 3em;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    #contact-form {
+        padding: 3em;
+    }
 }

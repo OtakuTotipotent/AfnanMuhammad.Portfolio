@@ -146,14 +146,70 @@
             <div class="socials-container"></div>
         </section>
         <section id="contact">
-            <!-- CONTACT FORM | IMMEDIATE RESPONSE: Gets user data to my email (ototipotent@gmail.com)  -->
+            <!-- CONTACT FORM | IMMEDIATE RESPONSE: Gets user data to my email  -->
             <div class="text-container">
                 <h4 class="section-heading">Start Conversation</h4>
                 <h3>
-                    section content goes here
+                    Let's build something exceptional. Detail your project, timeline, and architectural goals.
                 </h3>
             </div>
-            <div class="form-container"></div>
+            <div class="form-container">
+                <form novalidate id="contact-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="client-name">Full Name *</label>
+                            <input type="text" id="client-name" required placeholder="Type your fullname here...">
+                            <span class="error-msg">Name is required</span>
+                        </div>
+                        <div class="input-group">
+                            <label for="client-email">Email Address *</label>
+                            <input type="email" id="client-email" required placeholder="Your active email address...">
+                            <span class="error-msg">Enter a valid email</span>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type">
+                                <option value="Full-Stack Web App">Full-Stack Web App</option>
+                                <option value="Frontend Design & Development">Frontend Design & Development</option>
+                                <option value="API / Backend Architecture">API / Backend Architecture</option>
+                                <option value="DevOps / Cloud Hosting">DevOps / Cloud Hosting</option>
+                                <option value="Static Website Development">Static Website Development</option>
+                                <option value="Consulting / Code Review">Consulting / Code Review</option>
+                                <option value="Other">Others</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="budget">Estimated Budget</label>
+                            <select id="budget">
+                                <option value="Less than $500">&lt; $500 (Consulting/MVP)</option>
+                                <option value="$500 - $2,000">$500 - $2,000</option>
+                                <option value="$2,000 - $5,000">$2,000 - $5,000</option>
+                                <option value="$5,000+">$5,000+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" rows="5" required
+                            placeholder="Describe the core problem you need solved..."></textarea>
+                        <span class="error-msg">Message cannot be empty</span>
+                    </div>
+
+                    <div id="form-status" class="form-status" style="display: none;"></div>
+
+                    <div class="form-actions">
+                        <button type="submit" id="btn-submit" class="btn-primary">
+                            <span class="btn-text">Send via Email</span>
+                        </button>
+                        <button type="button" id="btn-whatsapp" class="btn-secondary">Send via WhatsApp</button>
+                    </div>
+
+                </form>
+            </div>
         </section>
         <section id="downloadable">
             <!-- DOWNLOADABLE MATERIALS | RESUME, CV, GUIDES -->
@@ -210,6 +266,7 @@
     <script src="scripts/navbar.js" defer></script>
     <script src="scripts/about.js" defer></script>
     <script src="scripts/socials.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
 </body>
 
 </html>

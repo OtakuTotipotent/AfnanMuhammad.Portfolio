@@ -54,6 +54,14 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+
 li {
     list-style: none;
 }
@@ -747,3 +755,148 @@ details[open] .answer {
 }
 
 /* CONTACT SECTION */
+
+#contact {
+    min-height: 50vh;
+    min-height: 50dvh;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em 1em;
+    border-radius: 1.5em;
+    background-color: var(--glass-secondary);
+    border: 1px solid var(--color-primary);
+}
+
+.input-row {
+    display: flex;
+    gap: 0.5em;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 0.6em 1em;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.5;
+    transition: box-shadow 0.2s ease;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    font-size: 0.85em;
+}
+
+.input-group textarea {
+    border-radius: 10px;
+    resize: none;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    box-shadow: 0 0 0 2px var(--color-secondary);
+}
+
+.input-group select {
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233AAFA9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1em center;
+    color: var(--color-primary);
+    background-size: 1em;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 1em;
+}
+
+.input-group .error-msg {
+    color: rgba(190, 15, 15, 0.8);
+    font-size: 0.95em;
+    font-weight: 500;
+    padding-left: 1em;
+    position: absolute;
+    bottom: -1.5em;
+    display: none;
+}
+
+.input-group.error .error-msg {
+    display: block;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    justify-content: space-evenly;
+}
+
+.form-actions button {
+    flex: 0 0 40%;
+    font-size: 1.1em;
+    padding: 0.5em;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.form-actions .btn-secondary {
+    color: palegreen;
+    border-color: palegreen;
+}
+
+.form-status {
+    padding: 1em;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.form-status.success {
+    color: #00ff00b7;
+    background-color: var(--color-secondary);
+    border: 1px solid #00ff00b7;
+}
+
+.form-status.error {
+    color: #ff6b6bc0;
+    border: 1px solid #ff6b6bc0;
+    background-color: var(--color-secondary);
+}
+
+#btn-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: transparent;
+    border-color: var(--glass-tertiary);
+    color: var(--color-tertiary);
+}
