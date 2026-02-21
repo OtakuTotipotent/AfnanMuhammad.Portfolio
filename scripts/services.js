@@ -25,6 +25,12 @@ const servicesData = [
         problem: "Building native-feeling mobile applications and persistent Progressive Web Apps (PWAs) utilizing complex browser storage APIs and shared monolithic or monorepo codebases.",
         techStack: ["React Native", "PWA Architecture", "Tailwind / ShadCN", "Stripe / Auth Integrations"]
     },
+    {
+        title: "AI Integration & Data Engineering",
+        description: "Bridging robust software architectures with advanced predictive models and automated workflows.",
+        problem: "Engineering intelligent data pipelines, integrating custom LLMs, and deploying vector databases to transform raw business analytics into actionable, automated operations.",
+        techStack: ["Python", "Pandas / NumPy", "LangChain", "Vector DBs", "FastAPI"]
+    }
 ];
 
 servicesData.forEach((service) => {

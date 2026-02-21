@@ -1221,7 +1221,7 @@ footer p {
     color: var(--color-tertiary);
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.05);
-    transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .status .badge:hover {
