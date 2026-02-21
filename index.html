@@ -231,32 +231,42 @@
     </main>
 
     <footer>
-        <p class="copyright">© 2024 Afnan Muhammad. Built with Love.</p>
-        <p class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#services">Services</a>
-            <a href="#socials">Socials</a>
-            <a href="#contact">Contact</a>
-        </p>
-        <p class="status">
-            <span class="badge">Available to Hire</span>
-            <span class="badge">Available for new Projects</span>
-            <span class="badge">Open to Collaborations</span>
-            <span class="badge">Prefers Remote Work</span>
-            <span class="badge">Freelancing</span>
-            <span class="badge">Tech Enthusiast</span>
-            <span class="badge">AI/DS Enthusiast</span>
-        </p>
-        <p class="legal">All rights reserved for
-            <a href="#">Privacy Policy</a>
-            and
-            <a href="#">Terms & Conditions.</a>
-        </p>
-        <p class="github-link">
-            <a href="#">Source</a>
-        </p>
+        <div class="footer-container">
+            <p class="copyright">
+                © <span id="current-year"></span> Afnan Muhammad. Engineered with precision.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#socials">Handles</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="status">
+                <span class="badge">Available for Hire</span>
+                <span class="badge">Open to Retainers</span>
+                <span class="badge">Remote Operations</span>
+                <span class="badge">Sovereign Architect</span>
+                <span class="badge">Full-Stack TS/Python</span>
+            </div>
+
+            <p class="legal">
+                All rights reserved for <a href="#">Privacy Policy</a> and <a href="#">Terms & Conditions</a>.
+            </p>
+
+            <p class="github-link">
+                <a href="https://github.com/OtakuTotipotent" target="_blank" rel="noopener noreferrer">Inspect Source
+                    Code</a>
+            </p>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 
     <script src="scripts/projects.js" defer></script>
     <script src="scripts/services.js" defer></script>

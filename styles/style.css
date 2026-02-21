@@ -1160,3 +1160,119 @@ details[open] .answer {
 .features-list {
     cursor: default;
 }
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid var(--glass-tertiary);
+    padding: 4em 1em 2em 1em;
+    margin-top: 4em;
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+}
+
+footer p {
+    color: var(--color-tertiary);
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.footer-links a {
+    color: var(--color-tertiary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
+
+.status {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.status .badge {
+    cursor: default;
+    font-size: 0.8em;
+    padding: 0.4em 1.2em;
+    border-radius: 50px;
+    color: var(--color-tertiary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.status .badge:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.legal a,
+.github-link a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.legal a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.legal a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.github-link {
+    margin-top: 1em;
+}
+
+.github-link a {
+    padding: 0.5em 1em;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.github-link a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.github-link a:hover::after {
+    display: none;
+}
