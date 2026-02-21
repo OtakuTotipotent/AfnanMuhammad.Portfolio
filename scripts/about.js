@@ -5,7 +5,7 @@ const aboutData = [
     {
         question: "Who is",
         highlight: "Afnan Muhammad",
-        answer: "A 26'Y software engineer and technologist based in Pakistan. Driven by a fastidious & completist mindset, he builds high- performance web applications and meticulously working toward becoming a principal Software Architect in the era of AI & Data Science."
+        answer: "A BS-IT software engineer and technologist based in Pakistan. Driven by a fastidious & completist mindset, he builds high- performance web applications and meticulously working toward becoming a principal Software Architect in the era of AI & Data Science."
     },
     {
         question: "What are",
@@ -44,9 +44,10 @@ const aboutData = [
     }
 ]
 
-aboutData.forEach((query) => {
+aboutData.forEach((query, index) => {
+    const isOpen = index === 0 ? 'open' : '';
     const accordionHTML = `
-    <details name="accordion">
+    <details name="accordion" ${isOpen}>
         <summary> ${query.question} <span class="highlight"> ${query.highlight} </span></summary>
         <p class="answer"> ${query.answer} </p>
     </details>

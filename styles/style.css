@@ -869,8 +869,8 @@ details[open] .answer {
 }
 
 .form-actions .btn-secondary {
-    color: palegreen;
-    border-color: palegreen;
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
 }
 
 .form-status {
