@@ -1,6 +1,15 @@
 // VARIABLES
 const projectsData = [
     {
+        title: "Synapse Analytics",
+        description: "Predictive data modeling and visualization dashboard.",
+        role: "Data Scientist & Engineer",
+        problem: "Processed gigabytes of unstructured business data through a custom pipeline, training predictive models to forecast operational bottlenecks and user retention.",
+        techStack: ["Python", "Scikit-Learn", "Pandas", "PostgreSQL", "FastAPI"],
+        links: { project: "#", code: "#" },
+        imgSrc: "images/projects/01.webp"
+    },
+    {
         title: "CoreClip",
         description: "AI-powered video and shorts generator platform.",
         role: "Fullstack Developer",

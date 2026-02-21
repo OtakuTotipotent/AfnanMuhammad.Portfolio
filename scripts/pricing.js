@@ -63,6 +63,22 @@ const pricingData = [
         ctaLink: "#contact",
         highlight: false
     },
+    {
+        tier: "Intelligent Automation",
+        target: "For data-heavy enterprises",
+        price: "Scoped Sprint",
+        description: "I will architect and deploy custom machine learning integrations, automated content pipelines, or predictive data models directly into your sovereign infrastructure.",
+        features: [
+            "Custom LLM & API Integration",
+            "Vector Database Architecture",
+            "Data Cleaning & Preprocessing",
+            "Automated Content Generation",
+            "Predictive Analytics Dashboards"
+        ],
+        ctaText: "Explore AI Solutions",
+        ctaLink: "#contact",
+        highlight: false
+    },
 ];
 
 function renderPricing() {
