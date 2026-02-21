@@ -449,6 +449,7 @@ details summary::marker {
 
 details summary::before {
     content: '+';
+    font-family: serif;
     color: var(--color-secondary);
     background-color: var(--color-primary);
     width: 30px;
@@ -456,8 +457,10 @@ details summary::before {
     border-radius: 50%;
     position: absolute;
     font-size: 1.5em;
-    line-height: 1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     right: .5em;
     top: 25%;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -859,17 +862,12 @@ details[open] .answer {
 }
 
 .form-actions button {
-    flex: 0 0 40%;
+    flex: 1;
     font-size: 1.1em;
     padding: 0.5em;
     cursor: pointer;
     font-family: inherit;
     font-weight: 600;
-}
-
-.form-actions .btn-secondary {
-    color: var(--color-secondary);
-    border-color: var(--color-secondary);
 }
 
 .form-status {

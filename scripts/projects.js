@@ -16,7 +16,7 @@ const projectsData = [
         problem: "Automating short-form video content creation pipelines utilizing AI models & strictly typed architectures.",
         techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase"],
         links: { project: "#", code: "#" },
-        imgSrc: "images/projects/00.webp"
+        imgSrc: "images/projects/02.webp"
     },
     {
         title: "Taskus",
@@ -25,7 +25,7 @@ const projectsData = [
         problem: "Engineered a persistent Progressive Web App leveraging complex browser storage APIs to eliminate the need for costly backend infrastructure.",
         techStack: ["HTML", "CSS", "JavaScript", "Local Storage", "PWA"],
         links: { project: "#", code: "#" },
-        imgSrc: "images/projects/01.webp"
+        imgSrc: "images/projects/00.webp"
     },
     {
         title: "DevHuddle",
@@ -34,7 +34,7 @@ const projectsData = [
         problem: "Refactored rigid template systems and implemented robust asynchronous notification delivery mechanisms.",
         techStack: ["Django", "Python", "PostgreSQL", "HTML", "CSS", "Tailwind CSS"],
         links: { project: "#", code: "#" },
-        imgSrc: "images/projects/00.webp"
+        imgSrc: "images/projects/03.webp"
     },
     {
         title: "Willayer",
@@ -43,7 +43,7 @@ const projectsData = [
         problem: "Building a unified sovereign platform capable of cross-platform video downloading & seamless AI content manipulation.",
         techStack: ["TypeScript", "APIs", "HTML/CSS", "Tailwind CSS", "MongoDB", "Data Science"],
         links: { project: "#", code: "#" },
-        imgSrc: "images/projects/01.webp"
+        imgSrc: "images/projects/04.webp"
     },
     {
         title: "Apex-fd Portfolio",
@@ -52,7 +52,7 @@ const projectsData = [
         problem: "From Figma design, developing a pixel perfect hand coded personal branding portfolio website.",
         techStack: ["HTML", "CSS", "JavaScript", "GitHub"],
         links: { project: "#", code: "#" },
-        imgSrc: "images/projects/00.webp"
+        imgSrc: "images/projects/01.webp"
     }
 ]
 
