@@ -16,7 +16,33 @@ navLinks.forEach(link => {
 });
 
 // ACTIVE NAVBAR LINKS
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5 // Triggers when 50% of the section is visible
+};
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            let currentId = entry.target.id;
+            if (entry.target.tagName.toLowerCase() === 'header') {
+                currentId = 'home';
+            }
+
+            navLinks.forEach(link => {
+                link.classList.remove('active-link');
+                if (link.getAttribute('href') === `#${currentId}`) {
+                    link.classList.add('active-link');
+                }
+            });
+        }
+    });
+}, observerOptions);
+
+sections.forEach(section => {
+    observer.observe(section);
+});
 
 // User Defined Functions
 function openSidebar() {

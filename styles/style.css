@@ -200,7 +200,10 @@ section>div {
 /* NAVBAR */
 
 nav {
-    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
     background-color: var(--glass-primary);
     border-bottom: 1px solid rgba(23, 37, 42, 0.1);
 }
