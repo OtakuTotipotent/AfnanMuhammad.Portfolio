@@ -1018,7 +1018,7 @@ details[open] .answer {
 .pricing-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     row-gap: 1em;
     width: 100%;
     margin-top: 2em;
@@ -1164,14 +1164,12 @@ details[open] .answer {
 /* FOOTER */
 
 footer {
-    border-top: 1px solid var(--glass-tertiary);
-    padding: 4em 1em 2em 1em;
     margin-top: 4em;
-    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    padding: 4em 1em 2em 1em;
+    border-top: 1px solid var(--glass-tertiary);
 }
 
 .footer-container {
-    max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1181,36 +1179,36 @@ footer {
 }
 
 footer p {
-    color: var(--color-tertiary);
     opacity: 0.7;
     font-size: 0.9em;
+    color: var(--color-secondary);
 }
 
 .footer-links {
+    gap: 1.5em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5em;
 }
 
 .footer-links a {
-    color: var(--color-tertiary);
+    opacity: 0.8;
     font-weight: 500;
     transition: color 0.3s ease;
-    opacity: 0.8;
+    color: var(--color-secondary);
+    transition: all .2s ease;
+    position: relative;
 }
 
 .footer-links a:hover {
     opacity: 1;
-    text-decoration: underline;
-    color: var(--color-secondary);
 }
 
 .status {
+    gap: 0.8em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.8em;
 }
 
 .status .badge {
@@ -1218,26 +1216,24 @@ footer p {
     font-size: 0.8em;
     padding: 0.4em 1.2em;
     border-radius: 50px;
-    color: var(--color-tertiary);
+    color: var(--color-primary);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--color-secondary);
     transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .status .badge:hover {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
     transform: translateY(-2px);
 }
 
-.legal a,
-.github-link a {
-    color: var(--color-primary);
-    text-decoration: none;
+.legal a {
     font-weight: 500;
     position: relative;
+    text-decoration: none;
+    color: var(--color-secondary);
 }
 
+.footer-links a::after,
 .legal a::after {
     content: '';
     position: absolute;
@@ -1246,33 +1242,25 @@ footer p {
     height: 1px;
     bottom: -2px;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     transform-origin: bottom right;
     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+.footer-links a:hover::after,
 .legal a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.github-link {
-    margin-top: 1em;
-}
-
 .github-link a {
-    padding: 0.5em 1em;
-    border: 1px solid var(--color-primary);
-    border-radius: 8px;
-    opacity: 0.8;
+    opacity: 1;
+    padding: 0.4em 0.8em;
+    border-radius: 100px;
+    border: 1px solid var(--color-secondary);
     transition: all 0.3s ease;
 }
 
 .github-link a:hover {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-}
-
-.github-link a:hover::after {
-    display: none;
+    opacity: 0.6;
 }
