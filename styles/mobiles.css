@@ -187,4 +187,10 @@
     .download-card {
         padding: 1.5em;
     }
+
+    /* PRICING & ENGAGEMENT SECTION */
+
+    .pricing-container {
+        grid-template-columns: 1fr;
+    }
 }
