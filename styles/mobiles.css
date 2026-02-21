@@ -176,4 +176,14 @@
     #contact-form {
         padding: 3em;
     }
+
+    /* DOWNLOADS DEGRADATION */
+
+    .downloads-container {
+        grid-template-columns: 1fr;
+    }
+
+    .download-card {
+        padding: 1.5em;
+    }
 }

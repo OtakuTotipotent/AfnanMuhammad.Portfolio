@@ -900,3 +900,103 @@ details[open] .answer {
     border-color: var(--glass-tertiary);
     color: var(--color-tertiary);
 }
+
+/* DOWNLOADABLE SECTION */
+
+#downloadable {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.downloads-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    width: 100%;
+}
+
+.download-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
+    padding: 1.5em;
+    border-radius: 1em;
+    border: 1px solid var(--color-tertiary);
+    background: linear-gradient(to top, var(--color-tertiary) 0%, rgba(58, 175, 169, 0.05) 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 20px var(--glass-tertiary);
+}
+
+.doc-info {
+    gap: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.doc-title {
+    font-size: 1.2em;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.doc-description {
+    opacity: 0.8;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-secondary);
+}
+
+.doc-meta {
+    gap: 1.5em;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.doc-meta .file-size {
+    font-size: 0.85em;
+    font-family: monospace;
+    color: var(--color-secondary);
+    opacity: 0.7;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.8em 2em;
+}
+
+.download-btn span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.highlight-card {
+    border-color: var(--color-secondary);
+}
+
+.highlight-card .tag {
+    color: var(--color-tertiary);
+    background-color: var(--color-primary);
+}
+
+.highlight-card .file-size {
+    opacity: 1;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.highlight-card .download-btn {
+    color: var(--color-tertiary);
+    background-color: var(--color-primary);
+}
