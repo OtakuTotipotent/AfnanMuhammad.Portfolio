@@ -10,16 +10,11 @@
 </head>
 
 <body>
-
-    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
-        aria-controls="navbar"> &#9776;
+    <button id="toggle-sidebar-button" aria-label="toggle sidebar" aria-expanded="false" aria-controls="navbar"> &#9776;
     </button>
 
     <nav id="navbar">
         <ul>
-            <li class="close-button-li"><button id="close-sidebar-button" onclick="closeSidebar()"
-                    aria-label="close sidebar">&#10006;</button>
-            </li>
             <li class="logo-li">Afnan Muhammad</li>
             <li><a class="active-link" aria-current="page" href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
@@ -29,9 +24,9 @@
         </ul>
     </nav>
 
-    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <div id="overlay" aria-hidden="true"></div>
 
-    <header>
+    <header id="home">
         <!-- HERO SECTION | INTRO & CTA -->
         <div class="text-container">
             <h1>

@@ -1,11 +1,14 @@
 // Variables
-const openButton = document.getElementById('open-sidebar-button');
+const sidebarToggler = document.getElementById('toggle-sidebar-button');
+const overlay = document.getElementById('overlay');
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('nav a');
 const sections = document.querySelectorAll('section, header');
 const media = window.matchMedia("(width < 700px)");
 
 // NAVBAR
+sidebarToggler.addEventListener('click', toggleSidebar);
+overlay.addEventListener('click', closeSidebar);
 media.addEventListener('change', (e) => updateNavbar(e));
 updateNavbar(media);
 
@@ -45,15 +48,20 @@ sections.forEach(section => {
 });
 
 // User Defined Functions
-function openSidebar() {
-    navbar.classList.add('show');
-    navbar.removeAttribute('inert');
-    openButton.setAttribute('aria-expanded', 'true');
+function toggleSidebar() {
+    navbar.classList.toggle('show');
+    if (navbar.classList.contains('show')) {
+        navbar.removeAttribute('inert');
+        sidebarToggler.setAttribute('aria-expanded', 'true');
+    } else {
+        navbar.setAttribute('inert', '');
+        sidebarToggler.setAttribute('aria-expanded', 'false');
+    }
 }
 
 function closeSidebar() {
     navbar.classList.remove('show');
-    openButton.setAttribute('aria-expanded', 'false');
+    sidebarToggler.setAttribute('aria-expanded', 'false');
     if (media.matches) {
         navbar.setAttribute('inert', '');
     }
