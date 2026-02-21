@@ -3,27 +3,27 @@ const downloadsData = [
         title: "Executive Resume (1-Page)",
         description: "ATS-optimized summary of my core TypeScript/Python stack, BS-IT academics, and immediate professional impact.",
         fileType: "PDF",
-        fileSize: "142 KB",
+        fileSize: "153 KB",
         fileName: "Afnan_Muhammad_Resume.pdf",
-        link: "#", // "assets/resume.pdf"
+        link: "assets/Afnan_executive_resume.pdf", // "assets/resume.pdf"
         highlight: true
     },
     {
         title: "Comprehensive Technical CV",
         description: "An exhaustive, completist breakdown of my database architectures, API designs, and multi-day learning sprints.",
         fileType: "PDF",
-        fileSize: "1.2 MB",
+        fileSize: "267 KB",
         fileName: "Afnan_Muhammad_Full_CV.pdf",
-        link: "#",
+        link: "assets/Afnan_comprehensive_cv.pdf",
         highlight: false
     },
     {
         title: "Sovereign Stack Manifesto",
         description: "A brief guide outlining my methodology for building independent, highly performant, self-hosted web ecosystems.",
         fileType: "PDF",
-        fileSize: "850 KB",
+        fileSize: "228 KB",
         fileName: "Afnan_Sovereign_Architecture.pdf",
-        link: "#",
+        link: "assets/Afnan_sovereign_manifesto.pdf",
         highlight: false
     },
     {
@@ -32,7 +32,7 @@ const downloadsData = [
         fileType: "ASC",
         fileSize: "4 KB",
         fileName: "Afnan_Public_Key.asc",
-        link: "#",
+        link: "assets/Afnan_Public_key.asc",
         highlight: false
     }
 ];
