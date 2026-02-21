@@ -2,6 +2,7 @@
 const openButton = document.getElementById('open-sidebar-button');
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('nav a');
+const sections = document.querySelectorAll('section, header');
 const media = window.matchMedia("(width < 700px)");
 
 // NAVBAR
@@ -10,7 +11,7 @@ updateNavbar(media);
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        closeSidebar();
+        if (media.matches) closeSidebar();
     });
 });
 
@@ -26,15 +27,18 @@ function openSidebar() {
 
 function closeSidebar() {
     navbar.classList.remove('show');
-    navbar.setAttribute('inert', '');
     openButton.setAttribute('aria-expanded', 'false');
+    if (media.matches) {
+        navbar.setAttribute('inert', '');
+    }
 }
 
 function updateNavbar(e) {
-    const isMobile = e.matches;
-    if (isMobile) {
+    if (e.matches) {
         navbar.setAttribute('inert', '');
+        navbar.classList.remove('show');
     } else {
         navbar.removeAttribute('inert');
+        navbar.classList.remove('show');
     }
 }
