@@ -51,7 +51,7 @@ const pricingData = [
         tier: "Students Corner",
         target: "For small to big static/dynamic projects",
         price: "One Time Payment",
-        description: "Your project is my project! I'll handover completed project within no time (depending on project scope). Feel free to share your ideas and problems, I will do my best to make your pass the project.",
+        description: "Your project is my project! I'll handover completed project within no time (depending on project scope). Feel free to share your ideas and problems, I will do my best to make you pass the project.",
         features: [
             "Static/Dynamic Application",
             "Frontend/Backend Integration",
