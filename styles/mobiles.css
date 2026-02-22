@@ -192,6 +192,7 @@
 
     .pricing-container {
         grid-template-columns: 1fr;
+        gap: 2em;
     }
 
     /* FOOTER DEGRADATION */

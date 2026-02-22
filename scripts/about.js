@@ -15,7 +15,7 @@ const aboutData = [
     {
         question: "What is",
         highlight: "Core Tech Stack",
-        answer: "Specialized in full-stack web development utilizing modern JavaScript/TypeScript and  Python frameworks, alongside Java Springboot.He highly invested in the \"Sovereign Stack\"  methodology—building independent, highly performant, and self- hosted software ecosystems."
+        answer: "Specialized in full-stack web development utilizing modern JavaScript/TypeScript and  Python frameworks, alongside Java Springboot. He is highly invested in the \"Sovereign Stack\"  methodology—building independent, highly performant, and self- hosted software ecosystems."
     },
     {
         question: "What about",
