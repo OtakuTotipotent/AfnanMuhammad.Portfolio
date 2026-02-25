@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #3AAFA9;
-    --color-secondary: #17252A;
-    --color-tertiary: #FEFFFF;
+    --color-primary: #EDEDED;
+    --color-secondary: #0A0A0A;
+    --color-tertiary: #FAFAFA;
     --padding-primary: min(2em, 4%);
-    --glass-primary: rgba(58, 175, 169, 0.5);
-    --glass-secondary: rgba(23, 37, 42, 0.1);
-    --glass-tertiary: rgba(255, 255, 255, 0.3);
+    --glass-primary: rgba(237, 237, 237, 0.5);
+    --glass-secondary: rgba(10, 10, 10, 0.1);
+    --glass-tertiary: rgba(250, 250, 250, 0.3);
 }
 
 * {
