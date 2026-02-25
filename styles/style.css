@@ -1,11 +1,10 @@
 :root {
-    --color-primary: #0A0A0A;
-    --color-secondary: #0070F3;
-    --color-tertiary: #FAFAFA;
-    --padding-primary: min(2em, 4%);
-    --glass-primary: rgba(10, 10, 10, 0.85);
-    --glass-secondary: rgba(255, 255, 255, 0.04);
-    --glass-tertiary: rgba(255, 255, 255, 0.12);
+    --color-primary: #3B82F6;
+    --color-secondary: #0F172A;
+    --color-tertiary: #F8FAFC;
+    --glass-primary: rgba(15, 23, 42, 0.1);
+    --glass-secondary: rgba(255, 255, 255, 0.1);
+    --glass-tertiary: rgba(255, 255, 255, 0.6);
 }
 
 * {
@@ -74,12 +73,12 @@ img {
     object-position: center;
 }
 
-nav,
+nav ul,
 header,
 main,
 footer {
-    max-width: 1024px;
     margin: auto;
+    max-width: 1024px;
 }
 
 main {
