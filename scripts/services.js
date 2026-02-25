@@ -2,7 +2,7 @@ const carousel = document.querySelector("#services .carousel");
 
 const servicesData = [
     {
-        title: "Enterprise Fullstack Engr.",
+        title: "Modern Full-Stack Development",
         description: "Architecting scalable, high-performance web applications tailored to complex business logic.",
         problem: "Delivering end-to-end solutions utilizing Server-Side Rendering (SSR), Static Site Generation (SSG), and edge compute for optimal SEO and millisecond load times.",
         techStack: ["NEXT.js", "Django", "React", "Nest.js", "TypeScript", "Java Spring Boot", "Tanstack Start"]
