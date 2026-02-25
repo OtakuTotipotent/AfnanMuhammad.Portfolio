@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #3AAFA9;
-    --color-secondary: #17252A;
-    --color-tertiary: #FEFFFF;
+    --color-primary: #10B981;
+    --color-secondary: #18181B;
+    --color-tertiary: #E4E4E7;
     --padding-primary: min(2em, 4%);
-    --glass-primary: rgba(58, 175, 169, 0.5);
-    --glass-secondary: rgba(23, 37, 42, 0.1);
-    --glass-tertiary: rgba(255, 255, 255, 0.3);
+    --glass-primary: rgba(24, 24, 27, 0.1);
+    --glass-secondary: rgba(255, 255, 255, 0.1);
+    --glass-tertiary: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -1017,7 +1017,7 @@ details[open] .answer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    row-gap: 1em;
+    row-gap: 2em;
     width: 100%;
     margin-top: 2em;
 }
