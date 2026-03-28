@@ -1,6 +1,6 @@
 # Afnan Muhammad | Software Engineering Portfolio
 
-![Portfolio Preview](images/00.webp)
+![Portfolio Preview](images/github/AfnanMuhammad.Portfolio-B2B.png)
 
 ## Architectural Philosophy
 
