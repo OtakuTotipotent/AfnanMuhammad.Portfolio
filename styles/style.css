@@ -205,7 +205,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 100;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(32px);
   background-color: var(--glass-primary);
   border-bottom: 1px solid rgba(23, 37, 42, 0.1);
 }
@@ -280,7 +280,7 @@ nav a.active-link {
 header {
   height: 80vh;
   height: 80dvh;
-  margin-top: 3em;
+  margin-top: 8em;
   display: flex;
   gap: 1em;
 }
@@ -1026,7 +1026,7 @@ details[open] .answer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  row-gap: 1em;
+  row-gap: 2em;
   width: 100%;
   margin-top: 2em;
 }
