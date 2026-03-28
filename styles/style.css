@@ -1,10 +1,11 @@
 :root {
-    --color-primary: #3B82F6;
-    --color-secondary: #0F172A;
-    --color-tertiary: #F8FAFC;
-    --glass-primary: rgba(15, 23, 42, 0.1);
+    --color-primary: #10B981;
+    --color-secondary: #18181B;
+    --color-tertiary: #E4E4E7;
+    --padding-primary: min(2em, 4%);
+    --glass-primary: rgba(24, 24, 27, 0.1);
     --glass-secondary: rgba(255, 255, 255, 0.1);
-    --glass-tertiary: rgba(255, 255, 255, 0.6);
+    --glass-tertiary: rgba(255, 255, 255, 0.5);
 }
 
 * {
@@ -204,7 +205,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 100;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(32px);
     background-color: var(--glass-primary);
     border-bottom: 1px solid rgba(23, 37, 42, 0.1);
 }
@@ -279,7 +280,7 @@ nav a.active-link {
 header {
     height: 80vh;
     height: 80dvh;
-    margin-top: 3em;
+    margin-top: 8em;
     display: flex;
     gap: 1em;
 }
@@ -1016,7 +1017,7 @@ details[open] .answer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    row-gap: 1em;
+    row-gap: 2em;
     width: 100%;
     margin-top: 2em;
 }
