@@ -1,274 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afnan Muhammad | Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/mobiles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobiles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <button id="toggle-sidebar-button" aria-label="toggle sidebar" aria-expanded="false" aria-controls="navbar"> &#9776;
+  <body>
+    <button
+      id="toggle-sidebar-button"
+      aria-label="toggle sidebar"
+      aria-expanded="false"
+      aria-controls="navbar"
+    >
+      &#9776;
     </button>
 
     <nav id="navbar">
-        <ul>
-            <li class="logo-li">Afnan Muhammad</li>
-            <li><a class="active-link" aria-current="page" href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#socials">Handles</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-        </ul>
+      <ul>
+        <li class="logo-li">Afnan Muhammad</li>
+        <li>
+          <a class="active-link" aria-current="page" href="#home">Home</a>
+        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#socials">Handles</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
     </nav>
 
     <div id="overlay" aria-hidden="true"></div>
 
     <header id="home">
-        <!-- HERO SECTION | INTRO & CTA -->
-        <div class="text-container">
-            <h1>
-                Building scalable full-stack solutions that solve real-world problems
-            </h1>
-            <h2>
-                Crafting high performance web applications with modern TypeScript & Python frameworks, plus Java
-                Springboot
-            </h2>
-            <div class="buttons">
-                <a href="#services" class="btn-primary">View Services</a>
-                <a href="#socials" class="btn-secondary">Get in touch</a>
-            </div>
+      <!-- HERO SECTION | INTRO & CTA -->
+      <div class="text-container">
+        <h1>
+          Building scalable full-stack solutions that solve real-world problems
+        </h1>
+        <h2>
+          Crafting high performance web applications with modern TypeScript &
+          Python frameworks, plus Java Springboot
+        </h2>
+        <div class="buttons">
+          <a href="#services" class="btn-primary">View Services</a>
+          <a href="#socials" class="btn-secondary">Get in touch</a>
         </div>
-        <div class="img-container">
-            <img src="images/00.webp" alt="Afnan's portrait">
-        </div>
+      </div>
+      <div class="img-container">
+        <img src="images/00.webp" alt="Afnan's portrait" />
+      </div>
     </header>
 
     <main>
-        <section id="projects">
-            <!-- FEATURED PROJECTS | CASE STUDIES -->
-            <div class="text-container">
-                <h4 class="section-heading">Featured Projects</h4>
-                <h3>
-                    A selection of end-to-end applications built with security, scalability, and user experience in
-                    mind.
-                </h3>
-                <a href="https://github.com/OtakuTotipotent?tab=repositories" class="btn-primary">View all projects</a>
+      <section id="projects">
+        <!-- FEATURED PROJECTS | CASE STUDIES -->
+        <div class="text-container">
+          <h4 class="section-heading">Featured Projects</h4>
+          <h3>
+            A selection of end-to-end applications built with security,
+            scalability, and user experience in mind.
+          </h3>
+          <a
+            href="https://github.com/OtakuTotipotent?tab=repositories"
+            class="btn-primary"
+            >View all projects</a
+          >
+        </div>
+        <div class="cards-container">
+          <div class="carousel"></div>
+          <div class="buttons-container">
+            <button class="btn-carousel prev" disabled>&#8592;</button>
+            <button class="btn-carousel next">&#8594;</button>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="academic-container">
+          <!-- ABOUT ME | BACKGROUND, CONTEXT, EXPERIENCES, Certificates, Linguistics, Institutes, Self etc... -->
+          <h4 class="section-heading">Engineer behind the code</h4>
+          <div class="accordions"></div>
+        </div>
+        <div class="gallery-container">
+          <div class="image">
+            <img
+              src="images/05.webp"
+              alt="Afnan in aesthetics"
+              loading="lazy"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="images/03.webp"
+              alt="Afnan's visit to a park"
+              loading="lazy"
+            />
+          </div>
+          <div class="image active">
+            <img
+              src="images/01.webp"
+              alt="Afnan at university"
+              loading="lazy"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="images/02.webp"
+              alt="Afnan at university"
+              loading="lazy"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="images/04.webp"
+              alt="Afnan in computer labs"
+              loading="lazy"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="images/88.webp"
+              alt="Afnan at with his fellows"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <!-- SERVICES | AREAS OF EXPERTISE -->
+        <div class="text-container">
+          <h4 class="section-heading">Expertise & Solutions</h4>
+          <h3>
+            From pixel-perfect front-ends to robust API architectures and cloud
+            deployments.
+          </h3>
+        </div>
+        <div class="cards-container">
+          <div class="carousel"></div>
+          <div class="buttons-container">
+            <button class="btn-carousel prev" disabled>&#8592;</button>
+            <button class="btn-carousel next">&#8594;</button>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <!-- TESTIMONIALS | SOCIAL PROOF, CREDIBILITY, RECOMMENDATIONS -->
+        <div class="text-container">
+          <h4 class="section-heading">Client Reviews</h4>
+          <h3>
+            A glance at recommendations from some of my professional clients.
+          </h3>
+        </div>
+        <div class="cards-container">
+          <div class="carousel"></div>
+          <div class="buttons-container">
+            <button class="btn-carousel prev" disabled>&#8592;</button>
+            <button class="btn-carousel next">&#8594;</button>
+          </div>
+        </div>
+      </section>
+      <section id="socials">
+        <!-- SOCIAL HANDLES | X, LINKEDin, GITHUB, FACEBOOK, IG, FIVERR, UPWORK, FREELANCER, UDEMY -->
+        <div class="text-container">
+          <h4 class="section-heading">Let's Connect</h4>
+          <h3>
+            Find me on professional platforms or reach out directly for
+            collaborations.
+          </h3>
+        </div>
+        <div class="socials-container"></div>
+      </section>
+      <section id="contact">
+        <!-- CONTACT FORM | IMMEDIATE RESPONSE: Gets user data to my email  -->
+        <div class="text-container">
+          <h4 class="section-heading">Start Conversation</h4>
+          <h3>
+            Let's build something exceptional. Detail your project, timeline,
+            and architectural goals.
+          </h3>
+        </div>
+        <div class="form-container">
+          <form novalidate id="contact-form">
+            <div class="input-row">
+              <div class="input-group">
+                <label for="client-name">Full Name *</label>
+                <input
+                  type="text"
+                  id="client-name"
+                  required
+                  placeholder="Type your fullname here..."
+                />
+                <span class="error-msg">Name is required</span>
+              </div>
+              <div class="input-group">
+                <label for="client-email">Email Address *</label>
+                <input
+                  type="email"
+                  id="client-email"
+                  required
+                  placeholder="Your active email address..."
+                />
+                <span class="error-msg">Enter a valid email</span>
+              </div>
             </div>
-            <div class="cards-container">
-                <div class="carousel">
-                </div>
-                <div class="buttons-container">
-                    <button class="btn-carousel prev" disabled>
-                        &#8592;
-                    </button>
-                    <button class="btn-carousel next">
-                        &#8594;
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="academic-container">
-                <!-- ABOUT ME | BACKGROUND, CONTEXT, EXPERIENCES, Certificates, Linguistics, Institutes, Self etc... -->
-                <h4 class="section-heading">Engineer behind the code</h4>
-                <div class="accordions">
-                </div>
-            </div>
-            <div class="gallery-container">
-                <div class="image">
-                    <img src="images/05.webp" alt="Afnan in aesthetics" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/03.webp" alt="Afnan's visit to a park" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/01.webp" alt="Afnan at university" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/02.webp" alt="Afnan at university" loading="lazy">
-                </div>
-                <div class="image active">
-                    <img src="images/04.webp" alt="Afnan in computer labs" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/88.webp" alt="Afnan at with his fellows" loading="lazy">
-                </div>
-            </div>
-        </section>
-        <section id="services">
-            <!-- SERVICES | AREAS OF EXPERTISE -->
-            <div class="text-container">
-                <h4 class="section-heading">Expertise & Solutions</h4>
-                <h3>From pixel-perfect front-ends to robust API architectures and cloud deployments.</h3>
-            </div>
-            <div class="cards-container">
-                <div class="carousel">
-                </div>
-                <div class="buttons-container">
-                    <button class="btn-carousel prev" disabled>
-                        &#8592;
-                    </button>
-                    <button class="btn-carousel next">
-                        &#8594;
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section id="testimonials">
-            <!-- TESTIMONIALS | SOCIAL PROOF, CREDIBILITY, RECOMMENDATIONS -->
-            <div class="text-container">
-                <h4 class="section-heading">Client Reviews</h4>
-                <h3>A glance at recommendations from some of my professional clients.</h3>
-            </div>
-            <div class="cards-container">
-                <div class="carousel">
-                </div>
-                <div class="buttons-container">
-                    <button class="btn-carousel prev" disabled>&#8592;</button>
-                    <button class="btn-carousel next">&#8594;</button>
-                </div>
-            </div>
-        </section>
-        <section id="socials">
-            <!-- SOCIAL HANDLES | X, LINKEDin, GITHUB, FACEBOOK, IG, FIVERR, UPWORK, FREELANCER, UDEMY -->
-            <div class="text-container">
-                <h4 class="section-heading">Let's Connect</h4>
-                <h3>Find me on professional platforms or reach out directly for collaborations.</h3>
-            </div>
-            <div class="socials-container"></div>
-        </section>
-        <section id="contact">
-            <!-- CONTACT FORM | IMMEDIATE RESPONSE: Gets user data to my email  -->
-            <div class="text-container">
-                <h4 class="section-heading">Start Conversation</h4>
-                <h3>
-                    Let's build something exceptional. Detail your project, timeline, and architectural goals.
-                </h3>
-            </div>
-            <div class="form-container">
-                <form novalidate id="contact-form">
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label for="client-name">Full Name *</label>
-                            <input type="text" id="client-name" required placeholder="Type your fullname here...">
-                            <span class="error-msg">Name is required</span>
-                        </div>
-                        <div class="input-group">
-                            <label for="client-email">Email Address *</label>
-                            <input type="email" id="client-email" required placeholder="Your active email address...">
-                            <span class="error-msg">Enter a valid email</span>
-                        </div>
-                    </div>
 
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label for="project-type">Project Type</label>
-                            <select id="project-type">
-                                <option value="Full-Stack Web App">Full-Stack Web App</option>
-                                <option value="Frontend Design & Development">Frontend Design & Development</option>
-                                <option value="API / Backend Architecture">API / Backend Architecture</option>
-                                <option value="DevOps / Cloud Hosting">DevOps / Cloud Hosting</option>
-                                <option value="Static Website Development">Static Website Development</option>
-                                <option value="Consulting / Code Review">Consulting / Code Review</option>
-                                <option value="Other">Others</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="budget">Estimated Budget</label>
-                            <select id="budget">
-                                <option value="Less than $500">&lt; $500 (Consulting/MVP)</option>
-                                <option value="$500 - $2,000">$500 - $2,000</option>
-                                <option value="$2,000 - $5,000">$2,000 - $5,000</option>
-                                <option value="$5,000+">$5,000+</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="message">Project Details *</label>
-                        <textarea id="message" rows="5" required
-                            placeholder="Describe the core problem you need solved..."></textarea>
-                        <span class="error-msg">Message cannot be empty</span>
-                    </div>
-
-                    <div id="form-status" class="form-status" style="display: none;"></div>
-
-                    <div class="form-actions">
-                        <button type="submit" id="btn-submit" class="btn-primary">
-                            <span class="btn-text">Send via Email</span>
-                        </button>
-                        <button type="button" id="btn-whatsapp" class="btn-secondary">Send via WhatsApp</button>
-                    </div>
-
-                </form>
+            <div class="input-row">
+              <div class="input-group">
+                <label for="project-type">Project Type</label>
+                <select id="project-type">
+                  <option value="Full-Stack Web App">Full-Stack Web App</option>
+                  <option value="Frontend Design & Development">
+                    Frontend Design & Development
+                  </option>
+                  <option value="API / Backend Architecture">
+                    API / Backend Architecture
+                  </option>
+                  <option value="DevOps / Cloud Hosting">
+                    DevOps / Cloud Hosting
+                  </option>
+                  <option value="Static Website Development">
+                    Static Website Development
+                  </option>
+                  <option value="Consulting / Code Review">
+                    Consulting / Code Review
+                  </option>
+                  <option value="Other">Others</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="budget">Estimated Budget</label>
+                <select id="budget">
+                  <option value="Less than $500">
+                    &lt; $500 (Consulting/MVP)
+                  </option>
+                  <option value="$500 - $2,000">$500 - $2,000</option>
+                  <option value="$2,000 - $5,000">$2,000 - $5,000</option>
+                  <option value="$5,000+">$5,000+</option>
+                </select>
+              </div>
             </div>
-        </section>
-        <section id="downloadable">
-            <!-- DOWNLOADABLE MATERIALS | RESUME, CV, GUIDES & necessary stuff -->
-            <div class="text-container">
-                <h4 class="section-heading">Resources & Documentation</h4>
-                <h3>Downloadable artifacts detailing my professional history and engineering methodologies.</h3>
+
+            <div class="input-group">
+              <label for="message">Project Details *</label>
+              <textarea
+                id="message"
+                rows="5"
+                required
+                placeholder="Describe the core problem you need solved..."
+              ></textarea>
+              <span class="error-msg">Message cannot be empty</span>
             </div>
-            <div class="downloads-container"></div>
-        </section>
-        <section id="pricing">
-            <!-- PRICING | FREELANCING, PRICES, OFFERS -->
-            <div class="text-container">
-                <div class="text-container">
-                    <h4 class="section-heading">Pricing & Engagement</h4>
-                    <h3>
-                        Flexible collaboration models engineered for startups, enterprises, and existing engineering
-                        teams.
-                    </h3>
-                </div>
-                <div class="pricing-container"></div>
+
+            <div
+              id="form-status"
+              class="form-status"
+              style="display: none"
+            ></div>
+
+            <div class="form-actions">
+              <button type="submit" id="btn-submit" class="btn-primary">
+                <span class="btn-text">Send via Email</span>
+              </button>
+              <button type="button" id="btn-whatsapp" class="btn-secondary">
+                Send via WhatsApp
+              </button>
             </div>
-            <div class="cards-container"></div>
-        </section>
+          </form>
+        </div>
+      </section>
+      <section id="downloadable">
+        <!-- DOWNLOADABLE MATERIALS | RESUME, CV, GUIDES & necessary stuff -->
+        <div class="text-container">
+          <h4 class="section-heading">Resources & Documentation</h4>
+          <h3>
+            Downloadable artifacts detailing my professional history and
+            engineering methodologies.
+          </h3>
+        </div>
+        <div class="downloads-container"></div>
+      </section>
+      <section id="pricing">
+        <!-- PRICING | FREELANCING, PRICES, OFFERS -->
+        <div class="text-container">
+          <div class="text-container">
+            <h4 class="section-heading">Pricing & Engagement</h4>
+            <h3>
+              Flexible collaboration models engineered for startups,
+              enterprises, and existing engineering teams.
+            </h3>
+          </div>
+          <div class="pricing-container"></div>
+        </div>
+        <div class="cards-container"></div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-container">
-            <p class="copyright">
-                © <span id="current-year"></span> Afnan Muhammad. Engineered with precision.
-            </p>
+      <div class="footer-container">
+        <p class="copyright">
+          © <span id="current-year"></span> Afnan Muhammad. Engineered with
+          precision.
+        </p>
 
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#services">Services</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#socials">Handles</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <div class="status">
-                <span class="badge">Available for Hire</span>
-                <span class="badge">Open to Retainers</span>
-                <span class="badge">Remote Operations</span>
-                <span class="badge">Next.js & Django Fullstack</span>
-                <span class="badge">React Developer</span>
-                <span class="badge">Full-Stack TS/Python</span>
-            </div>
-
-            <p class="legal">
-                All rights reserved for <a href="LICENSE">Privacy Policy</a> and <a href="LICENSE">Terms &
-                    Conditions</a>.
-            </p>
-
-            <p class="github-link">
-                <a href="https://github.com/OtakuTotipotent" target="_blank" rel="noopener noreferrer">Inspect Source
-                    Code</a>
-            </p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#socials">Handles</a>
+          <a href="#contact">Contact</a>
         </div>
+
+        <div class="status">
+          <span class="badge">Available for Hire</span>
+          <span class="badge">Open to Retainers</span>
+          <span class="badge">Remote Operations</span>
+          <span class="badge">Next.js & Django Fullstack</span>
+          <span class="badge">React Developer</span>
+          <span class="badge">Full-Stack TS/Python</span>
+        </div>
+
+        <p class="legal">
+          All rights reserved for <a href="LICENSE">Privacy Policy</a> and
+          <a href="LICENSE">Terms & Conditions</a>.
+        </p>
+
+        <p class="github-link">
+          <a
+            href="https://github.com/OtakuTotipotent"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Inspect Source Code</a
+          >
+        </p>
+      </div>
     </footer>
 
     <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
     </script>
 
     <script src="scripts/projects.js" defer></script>
@@ -281,6 +356,5 @@
     <script src="scripts/socials.js" defer></script>
     <script src="scripts/contact.js" defer></script>
     <script src="scripts/pricing.js" defer></script>
-</body>
-
+  </body>
 </html>
