@@ -205,7 +205,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 100;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(32px);
     background-color: var(--glass-primary);
     border-bottom: 1px solid rgba(23, 37, 42, 0.1);
 }
